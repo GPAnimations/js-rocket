@@ -1,3 +1,7 @@
+body {
+	font-family: 'helvetica', 'arial', sans-serif;
+}
+
 .left {
 	background-color: aquamarine;
 	position: fixed;
@@ -5,6 +9,26 @@
 	height: 100%;
 	top: 0;
 	left: 0;
+}
+
+.interface {
+	text-align: center;
+	padding: 20px;
+}
+
+a.button {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+a:hover {
+	color: red;
+	transition: color: 300ms;
 }
 
 .right {
@@ -24,7 +48,7 @@
 	height: 272px;
 	margin-left: -71.5px;
 	background: url("../img/rocket-state1.png") no-repeat 0 0;
-	transition: bottom 10000ms;
+	transition: bottom 5000ms;
 }
 
 
@@ -84,8 +108,6 @@ body.body-state5 .state5 {
 	display: block;
 }
 
-
-
 .ground {
 	background: url("../img/ground.png") no-repeat center 0;
 	position: absolute;
@@ -95,10 +117,32 @@ body.body-state5 .state5 {
 	height: 20px;
 }
 
-a{
-
+.nervous {
+	position: absolute;
+	bottom: 220px;
+	left: 50%;
+	background: url('../img/nervous.png') no-repeat 0 0;
+	width: 223px;
+	height: 100px;
+	margin-left: -180px;
+	display: none;
 }
 
-a.button {
+.nervous.show {
+	display: block;
+}
 
+
+.cant-wait {
+	position: absolute;
+	bottom: 220px;
+	left: 50%;
+	background: url('../img/cant-wait.png') no-repeat 0 0;
+	width: 206px;
+	height: 65px;
+	display: none;
+}
+
+.cant-wait.show {
+	display: block;
 }
